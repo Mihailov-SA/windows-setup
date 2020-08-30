@@ -13,14 +13,14 @@ else {
     Write-Host "✔️ Chocolatey found"
 }
 
-# Write-Host "⚙️ Setting up Windows features"
-# Get-Content ".\windows-features.txt" | ForEach-Object { ($_ -split "\r\n")[0] } | ForEach-Object {
-#     Write-Host "📦 Setting up DSIM package: $_"
-#     choco install $_ /y /source windowsfeatures
-# }
+Write-Host "⚙️ Setting up Windows features"
+Get-Content ".\windows-features.txt" | ForEach-Object { ($_ -split "\r\n")[0] } | ForEach-Object {
+    Write-Host "📦 Setting up DSIM package: $_"
+    choco install $_ /y /source windowsfeatures
+}
 
-# Write-Host "⚙️ Installing applications"
-# Get-Content ".\applications.txt" | ForEach-Object { ($_ -split "\r\n")[0] } | ForEach-Object {
-#     Write-Host "📦 Installing package: $_"
-#     choco install $_ /y
-# }
+Write-Host "⚙️ Installing applications"
+Get-Content ".\chocolatey.txt" | ForEach-Object { ($_ -split "\r\n")[0] } | ForEach-Object {
+    Write-Host "📦 Installing package: $_"
+    choco install $_ /y
+} } }
