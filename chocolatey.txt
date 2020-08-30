@@ -1,7 +1,0 @@
-gradle
-openjdk13
-intellijidea-community
-yubikey-manager
-nvm
-oh-my-posh
-FiraCode

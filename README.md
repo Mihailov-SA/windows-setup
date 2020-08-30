@@ -1,57 +1,41 @@
-# dot-github
+# Windows Setup
 
-![Made for GitHub](https://img.shields.io/badge/made%20for-GitHub-blue?style=for-the-badge)
+![Made with some language](https://img.shields.io/badge/powershell-blue?style=for-the-badge)
 ![Built with Love](https://img.shields.io/badge/built%20with-love-red?style=for-the-badge)
-![Project License](https://img.shields.io/github/license/pahimar/dot-github?style=for-the-badge&color=blue)
+[![Project License](https://img.shields.io/github/license/pahimar/windows-setup?style=for-the-badge&color=blue)](./LICENSE.md)
 [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-blue?style=for-the-badge)](./.github/CODE_OF_CONDUCT.md)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-blue?style=for-the-badge)](./.github/CONTRIBUTING.md)
-[![GitHub forks](https://img.shields.io/github/forks/pahimar/dot-github?color=blue&style=for-the-badge)](https://github.com/pahimar/dot-github/network/members)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/pahimar/dot-github?style=for-the-badge)](https://github.com/pahimar/dot-github/releases)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/pahimar/windows-setup?color=blue&style=for-the-badge)](https://github.com/pahimar/windows-setup/releases)
 
-Just another generic GitHub repository template for all :smile:
+A collection of scripts for fresh Windows 10 installs.
 
 ## Overview
 
-In [June of 2019](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/) GitHub announced repository templates, which allow for people/organizations to use template repositories as a [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_text) to quickly generate new GitHub repositories. I wanted to put together a (mostly) language agnostic repository template for my own projects, and hope that others may benefit from this work.
+A collection of scripts to customize a fresh Windows 10 install.
 
 ## Features
 
-This repository template includes;
-
-- An easily customizable boilerplate [README.md](./BOILERPLATE_README.md) file that follows this one
-- A [Code of Conduct](./.github/CODE_OF_CONDUCT.md)
-  - Adapted from the [Contributor Covenant](https://www.contributor-covenant.org)
-- An in-depth [Contribution](./.github/CONTRIBUTING.md) guide
-- Support for [all-contributors](https://allcontributors.org/)
-- Documentation for how people can get [support](./.github/SUPPORT.md)
-- Templates for;
-  - [Bug Reports](./.github/ISSUE_TEMPLATE/BUG_REPORT.md)
-  - [Feature Requests](.github/ISSUE_TEMPLATE/FEATURE_REQUEST.md)
-  - [Pull Requests](./.github/PULL_REQUEST_TEMPLATE.md)
-- Pre-configured [editorconfig](https://editorconfig.org/), [gitattributes](https://www.git-scm.com/docs/gitattributes), and [gitingore](https://git-scm.com/docs/gitignore) files
-- Suggested [Visual Studio Code](https://code.visualstudio.com/) extensions for faster IDE setup
+1. A "de-bloat" script that removes a lot of the bloat that is present after a fresh OS install. This script is based off of https://github.com/farag2/Windows-10-Setup-Script
+2. An application installation script based on [chocolatey](https://chocolatey.org/) that installs a specific set of packages from the chocolatey repo.
 
 ## Usage
 
-The steps to use this template repository in your own projects are;
+### De-Bloat
 
-1. [Create a new repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) using this template
-2. Rename this `README.md` file to something else, such as `TEMPLATE_README.md`
-3. Rename the provided `BOILERPLATE_README.md` to `README.md`
-4. Replace instances of `YOUR_*` in your new `README.md` to customize the [shields](https://shields.io/), social links, etc to yourself and your project
-   1. `YOUR_NAME` - Your name (ie, John Doe)
-   2. `YOUR_GITHUB_NAME` - Your GitHub user name (ie, `github.com/<user_name>`)
-   3. `YOUR_GITHUB_REPO` - Your GitHub repository name (ie, `github.com/<user_name>/<repository_name>`)
-   4. `YOUR_TWITTER_NAME` - Your Twitter user name (ie, `twitter.com/<your_name>`)
-   5. `YOUR_PATREON_NAME` - Your Patreon name (ie, `patreon.com/<your_name>`)
-   6. `YOUR_DISCORD_SERVER_ID` - Your Discord server id (follow the steps [in this video](https://vimeo.com/364220040) to set up widget permissions on your server and get your server id)
-   7. `YOUR_DISCORD_INVITE_LINK` - Invite link to your Discord server [steps here](https://support.discord.com/hc/en-us/articles/204155938-How-do-I-invite-friends-to-my-server-)
-5. Customize the rest of the repository to your hearts content
-6. Start creating!
+The [de-bloat](./debloat.ps1) script runs through a long list of tweaks to reduce the amount of bloat present in a fresh OS install.
+
+In order to run, from an elevated (aka, Run as Administrator) Powershell terminal run `.\debloat.ps1` and answer the prompts.
+
+### Chocolatey
+
+The [chocolatey](./setup.ps1) application setup script;
+
+1. Checks to see if [chocolatey](https://chocolatey.org/) is already installed (and installs it if it's not found).
+2. Reads the contents of [applications](./applications.txt) file, and for every entry, installs the package from the [chocolatey repo](https://chocolatey.org/packages).
 
 ## Releases
 
-All releases can be found on the [Releases](https://github.com/pahimar/dot-github/releases) page for this project.
+Check out the [Releases](https://github.com/pahimar/windows-setup/releases) page to download the latest release.
 
 ## Contributing
 
@@ -85,6 +69,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors)
