@@ -3,6 +3,7 @@ adobereader
 awscli
 azure-cli
 azure-functions-core-tools-3
+chocolateygui
 cpu-z
 deluge
 discord
