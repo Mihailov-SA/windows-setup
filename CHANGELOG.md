@@ -6,6 +6,23 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.0.1] - 2020-08-30
+
+### Added
+
+- Added script to install the package manager scoop
+  - Added scoop.txt with a list of applications to be installed with scoop
+
+### Changed
+
+- Rewrote de-bloat section in readme to refer to 3rd party de-bloat scripts
+- Rewrote setup script to remove de-bloat step
+- Updated list of applications that chocolatey installed (moved many to scoop)
+
+### Removed
+
+- Removed custom de-bloat script
+
 ## [1.0.0] - 2020-08-30
 
 - Initial Release
@@ -18,3 +35,4 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 [unreleased]: https://github.com/pahimar/windows-setup/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/pahimar/windows-setup/compare/0c5c8e174afa19c8931e582e4a3c4b58f775ed4a...v1.0.0
+[1.0.1]: https://github.com/pahimar/windows-setup/compare/v1.0.0...v1.0.1

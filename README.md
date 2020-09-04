@@ -22,13 +22,24 @@ A collection of scripts to customize a fresh Windows 10 install.
 
 ### De-Bloat
 
-The [de-bloat](./debloat.ps1) script runs through a long list of tweaks to reduce the amount of bloat present in a fresh OS install.
+Choose from one of two popular de-bloat scrips;
 
-In order to run, from an elevated (aka, Run as Administrator) Powershell terminal run `.\debloat.ps1` and answer the prompts.
+1. https://github.com/farag2/Windows-10-Setup-Script
+2. https://github.com/Sycnex/Windows10Debloater
+
+Be sure to run [O&O ShutUp10](https://www.oo-software.com/en/shutup10) after completing the de-bloat.
+
+### Scoop
+
+The [scoop](./scoop.ps1) application script:
+
+1. Checks to see if [scoop]() is already installed (and installs it if it's not found).
+2. Adds additional scoop buckets.
+3. Reads the contents of the [scoop.txt](./scoop.txt) file, and for every entry, installs the corresponding application.
 
 ### Chocolatey
 
-The [chocolatey](./setup.ps1) application setup script;
+The [chocolatey](./setup.ps1) application script;
 
 1. Checks to see if [chocolatey](https://chocolatey.org/) is already installed (and installs it if it's not found).
 2. Reads the contents of [applications](./applications.txt) file, and for every entry, installs the package from the [chocolatey repo](https://chocolatey.org/packages).

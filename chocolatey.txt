@@ -1,0 +1,11 @@
+adobereader
+epicgameslauncher
+geforce-experience
+geforce-game-ready-driver
+goggalaxy
+microsoft-edge
+microsoft-teams
+spotify
+steam
+vortex
+yubikey-manager
