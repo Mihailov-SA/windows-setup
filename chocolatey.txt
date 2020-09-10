@@ -1,11 +1,11 @@
 adobereader
 epicgameslauncher
+evernote
 geforce-experience
 geforce-game-ready-driver
 goggalaxy
 microsoft-edge
 microsoft-teams
 spotify
-steam
-vortex
+todoist
 yubikey-manager
