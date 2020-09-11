@@ -6,6 +6,28 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.0.2] - 2020-09-11
+
+### Added
+
+- chocolatey
+  - em-client
+
+### Removed
+
+- scoop
+  - alacritty
+  - less
+  - mailspring
+- chocolatey
+  - evernote
+  - microsoft-edge
+  - microsoft-teams
+  - steam
+  - todoist
+  - vortex
+  - yubikey-manager
+
 ## [1.0.1] - 2020-08-30
 
 ### Added
@@ -36,3 +58,4 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 [unreleased]: https://github.com/pahimar/windows-setup/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/pahimar/windows-setup/compare/0c5c8e174afa19c8931e582e4a3c4b58f775ed4a...v1.0.0
 [1.0.1]: https://github.com/pahimar/windows-setup/compare/v1.0.0...v1.0.1
+[1.0.2]: https://github.com/pahimar/windows-setup/compare/v1.0.1...v1.0.2
