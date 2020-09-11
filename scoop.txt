@@ -24,7 +24,6 @@ hwmonitor
 idea
 JetBrains-Mono
 JetBrainsMono-NF
-mailspring
 maven
 Meslo-NF
 nano
