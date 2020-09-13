@@ -1,5 +1,4 @@
 adobereader
-em-client
 epicgameslauncher
 geforce-experience
 geforce-game-ready-driver
