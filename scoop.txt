@@ -1,4 +1,5 @@
 7zip
+authy
 aws
 azure-cli
 azure-functions-core-tools
@@ -45,10 +46,10 @@ tldr
 touch
 unzip
 vlc
+vortex
 vscode
 wget
 whatsapp
 which
 windows-terminal
 zoxide
-vortex
