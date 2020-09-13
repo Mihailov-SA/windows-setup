@@ -6,6 +6,20 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.0.3] - 2020-09-13
+
+### Added
+
+- chocolatey
+  - todoist
+- scoop
+  - authy
+
+### Removed
+
+- chocolatey
+  - em-client
+
 ## [1.0.2] - 2020-09-11
 
 ### Added
@@ -55,7 +69,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Windows 10 de-bloat script based off of https://github.com/farag2/Windows-10-Setup-Script
 - Chocolatey application install script
 
-[unreleased]: https://github.com/pahimar/windows-setup/compare/v1.0.0...HEAD
+[unreleased]: https://github.com/pahimar/windows-setup/compare/v1.0.3...HEAD
 [1.0.0]: https://github.com/pahimar/windows-setup/compare/0c5c8e174afa19c8931e582e4a3c4b58f775ed4a...v1.0.0
 [1.0.1]: https://github.com/pahimar/windows-setup/compare/v1.0.0...v1.0.1
 [1.0.2]: https://github.com/pahimar/windows-setup/compare/v1.0.1...v1.0.2
+[1.0.3]: https://github.com/pahimar/windows-setup/compare/v1.0.2...v1.0.3
