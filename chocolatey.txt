@@ -16,7 +16,6 @@ postman
 powertoys
 spotify
 steam
-todoist
 vlc
 vortex
 vscode
